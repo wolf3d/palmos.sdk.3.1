@@ -1,5 +1,5 @@
 # Pull base image
-FROM wolf3d/palmos.sdk.4.0
+FROM wolf3d/debian.4.0-etch
 
 RUN echo "deb http://archive.debian.org/debian/ etch main non-free contrib" > /etc/apt/sources.list && \
 apt-get update && apt-get install -y vim less tar cogito git-core curl && \
